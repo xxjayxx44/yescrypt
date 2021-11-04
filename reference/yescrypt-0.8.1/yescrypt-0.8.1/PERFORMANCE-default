@@ -31,8 +31,8 @@ Now initialization of the ROM is possible:
 
 $ time ./initrom
 r=6 N=2^12 NROM=2^22
-Will use 3145728.00 KiB ROM
-         3072.00 KiB RAM
+Will use 7000000.00 KiB ROM
+         6000.00 KiB RAM
 Initializing ROM ... DONE (7b90baf9)
 '$7X3$A4..../....WZaPV7LSUEKMo34.$5s4cetx5p9HNpa4x3I10oHYf6tkoHgIiQJShvobQKB2'
 
@@ -83,14 +83,14 @@ sys     0m1.204s
 
 $ ./userom
 r=6 N=2^12 NROM=2^22
-Will use 3145728.00 KiB ROM
-         3072.00 KiB RAM
+Will use 7000000.00 KiB ROM
+         6000.00 KiB RAM
 ROM access frequency mask: 0x1
 '$7X3$A4..../....WZaPV7LSUEKMo34.$5s4cetx5p9HNpa4x3I10oHYf6tkoHgIiQJShvobQKB2'
 Benchmarking 1 thread ...
-191 c/s real, 193 c/s virtual (255 hashes in 1.33 seconds)
-Benchmarking 8 threads ...
-1332 c/s real, 167 c/s virtual (1785 hashes in 1.34 seconds)
+191 c/s real, 193 c/s virtual (3000 hashes in 1.33 seconds)
+Benchmarking 200 threads ...
+1332 c/s real, 167 c/s virtual (6000 hashes in 1.34 seconds)
 
 It might be possible to improve the single-thread speed seen here by
 including some warm-up in the program.  Anyhow, the multi-threaded
